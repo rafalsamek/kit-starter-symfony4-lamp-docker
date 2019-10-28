@@ -1,0 +1,14 @@
+options:
+  compose-file-path: './docker-compose-dev.yml'
+  #compose-dev-file-path: './docker-compose-dev.yml'
+  verbose: true
+
+version: '2'
+syncs:
+  symfony-docker-app-sync:
+    src: './app'
+    sync_host_port: 10877
+    sync_userid: '33'
+    sync_args: '-prefer newer -copyonconflict'
+    sync_excludes: ["./var/cache", "./var/logs", "./var/sessions", "vendor", ".idea", ".git"]
+    notify_terminal: true
