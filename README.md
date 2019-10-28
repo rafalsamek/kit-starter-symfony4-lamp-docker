@@ -1,5 +1,5 @@
- # kit-starter-lamp-docker
- LAMP on Docker starter application
+ # kit-starter-symfony4-lamp-docker
+ Symfony 4 on LAMP and Docker starter application
 
 ## Create docker-machine instance in Linux:
 1. cd to root directory of the project but different from /home as linux uses it e.g /home/current_user
