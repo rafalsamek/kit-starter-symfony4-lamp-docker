@@ -12,21 +12,21 @@ export VIRTUALBOX_SHARE_FOLDER="$PWD:$PWD"
 ```
 3. Create docker-machine
 ```
-docker-machine create -d virtualbox kit-starter-lamp-docker
+docker-machine create -d virtualbox kit-starter-symfony4-lamp-docker
 ```
 4.
 ```
-eval "$(docker-machine env kit-starter-lamp-docker)"
+eval "$(docker-machine env kit-starter-symfony4-lamp-docker)"
 ```
 
 ## Create docker-machine instance in Windows:
 1. Create docker-machine using specifig boot2docker.iso
 ```
-docker-machine create -d virtualbox --virtualbox-boot2docker-url https://github.com/boot2docker/boot2docker/releases/download/v18.09.8/boot2docker.iso kit-starter-lamp-docker
+docker-machine create -d virtualbox --virtualbox-boot2docker-url https://github.com/boot2docker/boot2docker/releases/download/v18.09.8/boot2docker.iso kit-starter-symfony4-lamp-docker
 ```
 2.
 ```
-eval "$(docker-machine env kit-starter-lamp-docker)"
+eval "$(docker-machine env kit-starter-symfony4-lamp-docker)"
 ```
 
 ## Add current unix user to docker group
@@ -52,8 +52,8 @@ docker run hello-world
 
  ## Start service in CLI:
  ```
-docker-machine start kit-starter-lamp-docker
-docker-compose -f /home/rafal/PhpstormProjects/kit-starter-lamp-docker/docker-compose.yml up -d --build
+docker-machine start kit-starter-symfony4-lamp-docker
+docker-compose -f /home/rafal/PhpstormProjects/kit-starter-symfony4-lamp-docker/docker-compose.yml up -d --build
 ```
  
  ## Check the docker-machine IP and run the project in Browser:
